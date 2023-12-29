@@ -16,7 +16,7 @@ body {
   top: 0;
   z-index: -1;
   border-top: 650px solid #3498db;
-  border-right: 2500px solid transparent;
+  border-right: 100vw solid transparent;
   overflow: hidden;
 }
 
@@ -41,6 +41,7 @@ body {
   width: 70%;
   background-color: white;
   padding: 0px 15px 0px;
+  box-shadow: 5px 5px 5px gainsboro;
 }
 
 .title {
@@ -69,7 +70,7 @@ body {
 
 .github:hover,
 .linkedin:hover {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(360deg);
   transition: all 1s;
 }
 
@@ -97,6 +98,12 @@ body {
   max-height: 500px;
   box-shadow: 5px 5px 5px gainsboro;
   border-style: none;
+  cursor: pointer;
+}
+
+.box:hover{
+  transform: rotate(1deg) scale(1.01);
+  transition: all 0.5s;
 }
 
 .imgWork{
@@ -180,6 +187,13 @@ body {
   height: 100%;
   object-fit:cover;
 }
+
+.footer{
+  text-align: center;
+  background-color: #3498db;
+
+}
+
 
 
 
